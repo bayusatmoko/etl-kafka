@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Set environment variables
-ENV KAFKA_HOST=localhost:9092
+ENV KAFKA_HOST=kafka:9092
 ENV KAFKA_SOURCE_TOPIC=mysql.maulana.my_table
 ENV KAFKA_DESTINATION_TOPIC=response-topic
 
