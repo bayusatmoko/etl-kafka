@@ -146,7 +146,7 @@ SELECT * FROM maulana.my_table;
     }
 }
 
-[root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# curl -X POST -H "Content-Type: application/json" --data @mysql-connector.json http://localhost:8083/connectors
-[root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# curl -X POST -H "Content-Type: application/json" --data @mysql-sink-connector.json http://localhost:8083/connectors
+[root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# curl -X POST -H "Content-Type: application/json" --data @mysql-connector.json http://localhost:8083ttp://localhost:8083/connectors/connectors
+[root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# curl -X POST -H "Content-Type: application/json" --data @mysql-sink-connector.json h
 
 [root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# curl -X GET http://localhost:8083/connectors/mysql-connector
