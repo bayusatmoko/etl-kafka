@@ -1,0 +1,17 @@
+{
+  "name": "transformer-service",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "maulana bayu satmoko",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "express": "^4.19.2",
+    "kafka-node": "^5.0.0"
+  }
+}
