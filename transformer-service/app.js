@@ -27,6 +27,14 @@ const consumerGroupOptions = {
   };
 const consumerGroup = new ConsumerGroup(consumerGroupOptions, sourceTopic);
 
+consumerGroup.on('ready', () => {
+    console.log('Kafka consumer is ready');
+  });
+  
+consumerGroup.on('error', (err) => {
+    console.error('Kafka consumer error:', err);
+  });
+
 consumerGroup.on('message', async (message) => {
   try {
     console.log('Received message:', message.value);

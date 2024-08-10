@@ -102,7 +102,7 @@ networks:
 [root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# docker compose up -d
 
 
-[root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# docker exec -it mysql -u root -pmaulana
+[root@ubuntu-s-2vcpu-4gb-amd-sgp1-01]# docker exec -it mysql /bin/bash
 bash-4.4# mysql -u root -pmaulana
 Enter password:
 

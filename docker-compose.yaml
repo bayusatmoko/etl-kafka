@@ -82,7 +82,7 @@ services:
   transformer-service:
     build:
       context: ./transformer-service
-      dockerfile: ./transformer-service/Dockerfile
+      dockerfile: ./Dockerfile
     environment:
       - KAFKA_HOST=kafka:9092
       - KAFKA_SOURCE_TOPIC=source-topic

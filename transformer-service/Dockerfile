@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Set environment variables
 ENV KAFKA_HOST=localhost:9092
-ENV KAFKA_SOURCE_TOPIC=source-topic
+ENV KAFKA_SOURCE_TOPIC=mysql.maulana.my_table
 ENV KAFKA_DESTINATION_TOPIC=response-topic
 
 # Copy package.json and package-lock.json to the working directory
