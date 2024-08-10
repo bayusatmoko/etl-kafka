@@ -10,6 +10,7 @@ CREATE USER 'maulana'@'%' IDENTIFIED WITH mysql_native_password BY 'maulana';
 GRANT ALL PRIVILEGES ON *.* TO 'maulana'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
+CREATE DATABASE maulana;
 
 --it is executed from SQL-Yog
 CREATE TABLE maulana.my_table (

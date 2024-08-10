@@ -8,7 +8,8 @@
       "database.user": "maulana",
       "database.password": "maulana",
       "database.server.id": "1",
-	  "database.server.name": "mysql",
+	    "database.server.name": "mysql",
+      "database.dbname": "maulana",
       "database.history.kafka.bootstrap.servers": "kafka:9092",
       "database.history.kafka.topic": "schema-changes.maulana"
     }

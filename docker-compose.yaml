@@ -77,6 +77,24 @@ services:
     networks:
       - kafka-net
 
+  transformer-service:
+    build:
+      context: ./transformer-service
+      dockerfile: ./transformer-service/Dockerfile
+    environment:
+      - KAFKA_HOST=kafka:9092
+      - KAFKA_SOURCE_TOPIC=source-topic
+      - KAFKA_DESTINATION_TOPIC=response-topic
+    ports:
+      - "3000:3000"
+    networks:
+      - kafka-net
+    depends_on:
+      - kafka-connect
+      - kafka
+      - mysql
+      - zookeeper
+
 networks:
   kafka-net:
     driver: bridge
