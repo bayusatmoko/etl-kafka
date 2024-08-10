@@ -85,7 +85,7 @@ services:
       dockerfile: ./Dockerfile
     environment:
       - KAFKA_HOST=kafka:9092
-      - KAFKA_SOURCE_TOPIC=source-topic
+      - KAFKA_SOURCE_TOPIC=mysql.maulana.my_table
       - KAFKA_DESTINATION_TOPIC=response-topic
     ports:
       - "3000:3000"
