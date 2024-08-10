@@ -12,7 +12,6 @@ FLUSH PRIVILEGES;
 
 CREATE DATABASE maulana;
 
---it is executed from SQL-Yog
 CREATE TABLE maulana.my_table (
     id INT AUTO_INCREMENT PRIMARY KEY,
     NAME VARCHAR(50),
